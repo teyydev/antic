@@ -1,0 +1,180 @@
+	
+	@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+
+body{
+	background: url("bodybackground.jpg");
+	color: rgb(0, 0, 0);
+}
+
+
+a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+li{
+	list-style-type: none;
+}
+
+
+
+
+/*HEADER DE LA PAGE*/
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+	margin-right: 100px;
+	margin-left: 100px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.titre{
+	font-family: 'Source Sans Pro', sans-serif;
+	text-shadow: 1px 1px 1px black;
+}
+
+div.sign_up{
+	border: solid 2px rgb(7, 0, 0);
+	border-radius: 30px;
+	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+div.sign_up:hover {
+	animation: nope .4s forwards;
+	cursor: not-allowed;
+}
+
+@keyframes nope{
+	0%{
+		transform: translateX(0px);
+	}
+
+	20%{
+		transform: translateX(-10px);
+	}
+
+	40%{
+		transform: translateX(10px);
+	}
+
+	60%{
+		transform: translateX(-10px);
+	}
+
+	80%{
+		transform: translateX(10px);
+	}
+
+	100%{
+		transform: translateX(0px);
+	}
+}
+
+
+
+/*----------------*/
+
+
+/*PREMIER CONTENU DE LA PAGE*/
+
+
+div.contain1{
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-content: center;
+	margin-left: 100px;
+	margin-top: 100px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+div.little_welcome{
+	font-size: 20px;
+}
+
+div.big_text{
+	font-size: 70px;
+	margin-right: 600px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+/*----------------*/
+
+/*SECOND CONTENU DE LA PAGE*/
+
+div.contain2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+	margin-right: 100px;
+	margin-left: 100px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+div.go_to_website{
+	border: solid 2px rgb(0, 0, 0);
+	border-radius: 30px;
+	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+/*ANIMATION PULSE*/
+
+	box-shadow: 0 0 0 0 rgb(0, 0, 0);
+	animation: pulse 1.5s infinite;
+
+}
+
+@keyframes pulse {
+	to{
+		box-shadow: 0 0 0 18px rgba(0, 0, 0, 0.01);
+	}
+}
+
+/*----------------*/
+
+/*CONTENU TOTAL*/
+
+div.contain_all{
+	animation: op 0.8s ease-out;
+}
+
+@keyframes op {
+	from{
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	to{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+h1.dash{
+	color: rgb(0, 0, 0);
+}
+
+
+h1.titredash{
+	color: rgb(0, 0, 0);
+}
+
+a.dashwix{
+	color: rgb(255, 255, 255);
+}
+
+
+/*----------------*/
